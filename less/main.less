@@ -1,0 +1,168 @@
+@primary-background-color: #943a3a;
+@primary-background-color-dark: darken(@primary-background-color, 20%);
+@primary-text-color: #fff;
+@secondary-background-color: #ffd59B;
+@secondary-background-color-dark: darken(@secondary-background-color, 20%);
+@secondary-text-color: #333;
+@default-padding: 1rem;
+@default-margin: 1rem;
+@no-margin: 0px;
+@default-gap: 0.5rem;
+
+@breakResolutions: {
+    tablet: 720px;
+    desktop: 1025px;
+    widescreen: 1300px;
+    ultrawide: 2000px;
+};
+
+@breakPrefix: {
+    mobile: sm-;
+    tablet: md-;
+    desktop: lg-;
+    widescreen: xl-;
+    ultrawide: xxl-;
+}
+
+.default_button {
+    text-decoration: none;
+    padding:0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @primary-background-color;
+    color:@primary-text-color;
+    box-shadow: 1px 1px 3px @primary-background-color-dark;
+};
+
+@import 'header.less';
+@import 'hero.less';
+@import 'components.less';
+@import 'grid.less';
+@import 'footer.less';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+main .container {
+    padding:1rem;
+}
+
+////////
+@primary-color: #333;
+@secondary-color: #fff;
+@accent-color: #ff5722;
+@font-family: 'Arial, sans-serif';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.organization, .news {
+    background-color: @secondary-color;
+    padding: 50px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    color: @primary-color;
+    font-family: @font-family;
+}
+
+h2 {
+    color: @accent-color;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-align: center; /* Centrar el título */
+}
+
+p, article h3 {
+    color: @primary-color;
+    font-size: 1.2em;
+    text-align: center; /* Centrar el texto */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: @accent-color;
+    margin-bottom: 5px;
+}
+
+.organization p, .news p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    text-align: center; /* Centrar el texto */
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrar las tarjetas */
+}
+
+.card {
+    background-color: @secondary-color;
+    border: 1px solid @primary-color;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; 
+    text-align: center; 
+}
+
+.card img {
+    max-width: 100%;
+    height: 400px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.card h3 {
+    color: @accent-color;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: @primary-color;
+    color: @secondary-color;
+}
+
+.card p {
+    padding: 10px;
+    font-size: 1em;
+    color: @primary-color;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .card {
+        flex: 1 1 100%;
+        margin: 10px 0;
+        max-width: 100%; 
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p, article h3 {
+        font-size: 1em;
+    }
+}

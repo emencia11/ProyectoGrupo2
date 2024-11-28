@@ -1,0 +1,95 @@
+@primary-color: #333;
+@secondary-color: #fff;
+@accent-color: #ff5722;
+@font-family: 'Arial, sans-serif';
+
+header {
+    background-color: @primary-color;
+    color: @secondary-color;
+    padding: 1rem 0;
+    font-family: @font-family;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem;
+
+        .branding {
+            h1 {
+                margin: 0;
+                font-size: 2rem;
+                color: @accent-color;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    margin-right: 1.5rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    a {
+                        color: @secondary-color;
+                        text-decoration: none;
+                        font-weight: bold;
+
+                        &:hover {
+                            color: @accent-color;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .hamburger {
+                display: none;
+                background: none;
+                border: none;
+                cursor: pointer;
+
+                span {
+                    display: block;
+                    width: 25px;
+                    height: 3px;
+                    margin: 5px 0;
+                    background-color: @secondary-color;
+                    transition: background-color 0.3s;
+                }
+
+                &:hover span {
+                    background-color: @accent-color;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    header .container nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: @primary-color;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: 1000;
+    }
+
+    header .container nav .hamburger {
+        display: block;
+    }
+
+    header .container nav.active ul {
+        display: flex;
+    }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/imagen.css" type="text/css">
+</head>
+
+<body>
+    <main>
+        <section class="gallery">
+            <div class="container">
+                <h2>Galeria de Imagenes</h2>
+                <div class="grid">
+                    {{#each productos}}
+                        {{>galeria/tarjeta
+                            producto = .
+                        }}
+                    {{/each}}
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

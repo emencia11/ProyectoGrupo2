@@ -1,0 +1,19 @@
+<header>
+    <div class="container">
+        <section class="branding">
+            <h1>Fit Seven Gym</h1>
+        </section>
+        <nav aria-label="Main Navigation">
+            <ul>
+                {{#each nav}}
+                    <li><a href="%BASE_URL%{{uri}}">{{label}}</a></li>
+                {{/each}}
+            </ul>
+            <button class="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </div>
+</header>
