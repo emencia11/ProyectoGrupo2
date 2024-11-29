@@ -71,7 +71,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Compile .less to CSS
-        run: npx lessc src/styles/main.less src/styles/main.css
+        run: npx lessc less/main.less src/styles/main.css
       - name: Build
         run: npm run build
       - name: Setup de Github Pages
