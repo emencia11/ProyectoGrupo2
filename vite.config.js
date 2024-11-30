@@ -3,12 +3,13 @@ import * as glob from "glob";
 import path, { resolve } from "node:path";
 import htmlPurge from 'vite-plugin-purgecss';
 import handlebars from 'vite-plugin-handlebars';
-import {generarContextoDePagina} from './data/index';
+import less from 'less'; // Añade esta línea
+import { generarContextoDePagina } from './data/index';
 
-const getHtmlEntries = ()=>{
+const getHtmlEntries = () => {
     return Object.fromEntries(
         [
-            ...glob.sync('./**/*.html', { ignore:['./dist/**','./node_modules/**']}).map(file=>[
+            ...glob.sync('./**/*.html', { ignore: ['./dist/**', './node_modules/**'] }).map(file => [
                 file.slice(0, file.length - path.extname(file).length),
                 resolve(__dirname, file)
             ])
@@ -23,6 +24,11 @@ export default defineConfig(
         build: {
             rollupOptions: {
                 input: getHtmlEntries()
+            }
+        },
+        css: {
+            preprocessorOptions: {
+                less: {} // Añade esta sección para Less
             }
         },
         plugins: [
