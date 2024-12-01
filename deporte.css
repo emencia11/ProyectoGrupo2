@@ -13,7 +13,7 @@ table {
   }
   
   th {
-    background-color: #3498db;
+    background-color: #ff5722;
     color: white;
     font-weight: bold;
   }
@@ -24,3 +24,72 @@ table {
   
   tr:hover {
     background-color: #e9ecef;}
+
+    /* AQUI MASS */
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  .intro, main {
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f9fa;
+      margin-bottom: 20px;
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  .intro h1 {
+      color: #343a40;
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .intro p {
+      color: #6c757d;
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  .whatsapp-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #25D366;
+      font-size: 50px;
+      margin-top: 15px;
+      transition: color 0.3s;
+  }
+  
+  .whatsapp-icon:hover {
+      color: #128C7E;
+  }
+  
+  .whatsapp-text {
+      margin-left: 10px;
+      font-size: 18px;
+      color: #25D366;
+      font-weight: bold;
+      transition: color 0.3s;
+  }
+  
+  .whatsapp-icon:hover .whatsapp-text {
+      color: #128C7E;
+  }
+  
+  label {
+      font-size: 20px;
+      color: #343a40;
+      display: block;
+      margin-bottom: 15px;
+  }
+  
