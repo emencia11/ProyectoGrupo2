@@ -28,7 +28,7 @@ h2 {
 }
 
 .grid div {
-    flex: 1 1 calc(25% - 40px);
+    flex: 1 1 calc(33.33% - 40px); 
     box-sizing: border-box;
     margin: 10px;
     background-color: #fff;
@@ -62,4 +62,17 @@ h2 {
 .grid div .info p {
     margin: 10px 0 0;
     color: #777;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1200px) {
+    .grid div {
+        flex: 1 1 calc(50% - 40px); 
+    }
+}
+
+@media (max-width: 768px) {
+    .grid div {
+        flex: 1 1 calc(100% - 40px); 
+    }
 }

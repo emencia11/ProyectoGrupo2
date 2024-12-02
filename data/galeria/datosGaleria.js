@@ -2,83 +2,75 @@ export const getGalleryData = ()=>({
     productos: [
         {
             imgAlt: ' Imagen 1',
-            imgUrl: '/imagenes/2.jpg',
+            imgUrl: '/imagenes/Imagen1.jpg',
         },
         {
             imgAlt: ' Imagen 2',
-            imgUrl: '/imagenes/imagen31.jpg',
+            imgUrl: '/imagenes/Imagen2.jpg',
         },
         {
             imgAlt: ' Imagen 3',
-            imgUrl: '/imagenes/4.jpg',
+            imgUrl: '/imagenes/Imagen3.jpg',
         },
         {
             imgAlt: ' Imagen 4',
-            imgUrl: '/imagenes/imagen30.jpg',
+            imgUrl: '/imagenes/Imagen4.jpg',
         },
         {
             imgAlt: ' Imagen 5',
-            imgUrl: '/imagenes/6.jpg',
+            imgUrl: '/imagenes/Imagen5.jpg',
         },
         {
             imgAlt: ' Imagen 6',
-            imgUrl: '/imagenes/8.jpg',
+            imgUrl: '/imagenes/Imagen6.jpg',
         },
         {
             imgAlt: ' Imagen 7',
-            imgUrl: '/imagenes/9.jpg',
+            imgUrl: '/imagenes/Imagen7.jpg',
         },
         {
             imgAlt: ' Imagen 8',
-            imgUrl: '/imagenes/10.jpg',
+            imgUrl: '/imagenes/Imagen8.jpg',
         },
         {
             imgAlt: ' Imagen 9',
-            imgUrl: '/imagenes/11.jpg',
+            imgUrl: '/imagenes/Imagen9.jpg',
         },
         {
             imgAlt: ' Imagen 10',
-            imgUrl: '/imagenes/casco.jpg',
+            imgUrl: '/imagenes/Imagen10.jpg',
         },
         {
             imgAlt: ' Imagen 11',
-            imgUrl: '/imagenes/cinta.jpg',
+            imgUrl: '/imagenes/Imagen11.jpg',
         },
         {
             imgAlt: ' Imagen 12',
-            imgUrl: '/imagenes/imagen1.jpg',
+            imgUrl: '/imagenes/Imagen12.jpg',
         },
         {
             imgAlt: ' Imagen 13',
-            imgUrl: '/imagenes/imagen2.jpg',
+            imgUrl: '/imagenes/Imagen13.jpg',
         },
         {
             imgAlt: ' Imagen 14',
-            imgUrl: '/imagenes/imagen3.jpg',
+            imgUrl: '/imagenes/Imagen14.jpg',
         },
         {
             imgAlt: ' Imagen 15',
-            imgUrl: '/imagenes/imagen4.jpg',
+            imgUrl: '/imagenes/Imagen15.jpg',
         },
         {
             imgAlt: ' Imagen 16',
-            imgUrl: '/imagenes/imagen5.jpg',
+            imgUrl: '/imagenes/Imagen16.jpg',
         },
         {
             imgAlt: ' Imagen 17',
-            imgUrl: '/imagenes/imagen6.jpg',
+            imgUrl: '/imagenes/Imagen17.jpg',
         },
         {
             imgAlt: ' Imagen 18',
-            imgUrl: '/imagenes/imagen23.jpg',
-        },
-        {
-            imgAlt: ' Imagen 19',
-            imgUrl: '/imagenes/imagen24.jpg',
-        },
-        {
-            imgAlt: ' Imagen 20',
-            imgUrl: '/imagenes/imagen25.jpg',
+            imgUrl: '/imagenes/Imagen18.jpg',
         },
     ]
 });
