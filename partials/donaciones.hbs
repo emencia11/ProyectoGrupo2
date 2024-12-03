@@ -1,0 +1,22 @@
+<section class="donaciones">
+    <h2>Haz una Donación</h2>
+    <p>Sus donaciones nos ayudan a continuar con nuestro emprendimiento. Puedes hacer una donación en línea a través del siguiente formulario:</p>
+    <form id="donation-form" class="form-horizontal">
+        <div class="form-group">
+            <label for="name" class="control-label">Nombre:</label>
+            <input type="text" id="name" name="name" class="form-control" placeholder="Ingrese su nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="email" class="control-label">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" class="form-control" placeholder="Ingrese su correo electrónico" required>
+        </div>
+        <div class="form-group">
+            <label for="amount" class="control-label">Monto:</label>
+            <input type="number" id="amount" name="amount" class="form-control" min="1" step="any" placeholder="Ingrese el monto de su donación" required>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Donar</button>
+        </div>
+    </form>
+    <div id="paypal-button-container"></div>
+</section>
