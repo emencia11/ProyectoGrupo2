@@ -1,0 +1,153 @@
+.registration-form {
+    .form-container {
+      background-color: #fff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  
+    .form-title {
+      color: #333;
+      font-size: 26px;
+      margin-bottom: 25px;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  
+    section {
+      margin-bottom: 25px;
+  
+      h3 {
+        color: #e64a19;
+        font-size: 22px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 600;
+      }
+  
+      input,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-sizing: border-box;
+        transition: border-color 0.3s, box-shadow 0.3s;
+  
+        &:focus {
+          border-color: #e64a19;
+          outline: none;
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+      }
+  
+      .date-selection {
+        display: flex;
+        justify-content: space-between;
+  
+        select {
+          width: 30%;
+        }
+      }
+    }
+  
+    label[for="email"],
+    input[type="email"] {
+      display: block;
+      margin-top: 1rem;
+      color: #333;
+      font-weight: 600;
+    }
+  
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s;
+  
+      &:focus {
+        border-color: #e64a19;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+  
+    label[for="modalidad"],
+    select[name="modalidad"] {
+      display: block;
+      margin-top: 1rem;
+      color: #333;
+      font-weight: 600;
+    }
+  
+    select[name="modalidad"] {
+      background-color: #fff;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+      transition: border-color 0.3s, box-shadow 0.3s;
+  
+      &:focus {
+        border-color: #e64a19;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+  
+    .btn-submit {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      background-color: #ff5722;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+  
+      &:hover {
+        background-color: #e64a19;
+        transform: translateY(-2px);
+      }
+  
+      &:active {
+        background-color: #d84315;
+        transform: translateY(0);
+      }
+    }
+    
+    .form-container {
+      animation: fadeIn 0.5s ease-in-out;
+    }
+  
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  

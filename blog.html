@@ -5,20 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fit Seven Gym - Grupo 7</title>
     <link rel="stylesheet" href="less/main.less" type="text/css">
+    <link rel="stylesheet" href="/blog.css" type="text/css">
 </head>
 <body>
-   {{>header}}.
-   
+    {{>header}}
 
-
-
-
-   
-
-
-
+    <main>
+        <!-- Sección de blog -->
+        <section class="blog">
+            <h2>Últimos Artículos</h2>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h3 class="post-title">Consejos para una vida saludable</h3>
+                    <p class="post-date">Publicado el 01 de diciembre de 2024</p>
+                    <p class="post-excerpt">Descubre los mejores consejos para mantenerte saludable y activo durante todo el año...</p>
+                    <a href="https://hospitalcuh.com/vida-activa-y-saludable/" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Entrenamiento de fuerza para principiantes</h3>
+                    <p class="post-date">Publicado el 28 de noviembre de 2024</p>
+                    <p class="post-excerpt">Comienza tu camino en el entrenamiento de fuerza con estos ejercicios esenciales...</p>
+                    <a href="https://valssport.com/ejercicios-fuerza-principiantes/" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Nutrición deportiva avanzada</h3>
+                    <p class="post-date">Publicado el 25 de noviembre de 2024</p>
+                    <p class="post-excerpt">Aprende sobre la nutrición avanzada para mejorar tu rendimiento deportivo...</p>
+                    <a href="https://www.ergodinamica.com/blog/nutricion-deportiva-mejora-rendimiento-recuperacion/" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Rutinas de cardio efectivas</h3>
+                    <p class="post-date">Publicado el 20 de noviembre de 2024</p>
+                    <p class="post-excerpt">Descubre rutinas de cardio que te ayudarán a mejorar tu resistencia y salud cardiovascular...</p>
+                    <a href="https://www.pureform.mx/blog/pure-form-39/3-rutinas-de-cardio-para-mejorar-tu-resistencia-3?srsltid=AfmBOooh5Wiyn4tGActx6u1p852LHYAZ3gICAYQVX0mORHZZce55_6TU" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Importancia del descanso en el entrenamiento</h3>
+                    <p class="post-date">Publicado el 03 de diciembre de 2024</p>
+                    <p class="post-excerpt">Descubre cómo el descanso adecuado puede mejorar tus resultados de entrenamiento y prevenir lesiones...</p>
+                    <a href="https://hn.aptavs.com/articulos/descanso-clave-mejorar-el-rendimiento-deportivo" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Yoga para la flexibilidad</h3>
+                    <p class="post-date">Publicado el 02 de diciembre de 2024</p>
+                    <p class="post-excerpt">Explora cómo el yoga puede ayudarte a mejorar tu flexibilidad y reducir el estrés...</p>
+                    <a href="https://kidshealth.org/es/teens/yoga-stress.html#:~:text=El%20yoga%20puede%20ayudar%20a,sentirte%20estresado%20para%20practicar%20yoga." class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Beneficios de la hidratación</h3>
+                    <p class="post-date">Publicado el 30 de noviembre de 2024</p>
+                    <p class="post-excerpt">Entiende la importancia de mantenerte hidratado y cómo puede afectar tu rendimiento...</p>
+                    <a href="https://www.efadeporte.com/blog/nutricion-deportiva/importancia-de-la-hidratacion-en-el-deporte" class="read-more">Leer más</a>
+                </article>
+                <article class="blog-post">
+                    <h3 class="post-title">Meditación para mejorar la concentración</h3>
+                    <p class="post-date">Publicado el 29 de noviembre de 2024</p>
+                    <p class="post-excerpt">Aprende técnicas de meditación que pueden ayudarte a mejorar tu concentración y bienestar mental...</p>
+                    <a href="https://www.mayoclinic.org/es/tests-procedures/meditation/in-depth/meditation/art-20045858" class="read-more">Leer más</a>
+                </article>            
+            </div>
+        </section>
     </main>
     {{>footer}}
+
     <script>
         document.querySelector('.hamburger').addEventListener('click', function() {
             document.querySelector('nav').classList.toggle('active');

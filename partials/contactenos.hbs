@@ -1,0 +1,30 @@
+<section class="contact-info">
+    <h2>Contáctanos</h2>
+    <p>¿Tienes preguntas o sugerencias? ¡Nos encantaría saber de ti! Aquí tienes varias maneras de ponerte en contacto con nosotros:</p>
+    
+    <div class="contact-details">
+        <h3>Información de Contacto</h3>
+        <ul>
+            <li><strong>Dirección:</strong> Centro Comercial Santa Mónica, Miraflores, frente a INFOP, Tegucigalpa, Honduras</li>
+            <li><strong>Teléfono:</strong> +504 8956-5823</li>
+            <li><strong>Email:</strong> <a href="mailto:infoseven@gmail.com">infoseven@gmail.com</a></li>
+        </ul>
+    </div>
+
+    <div class="contact-form">
+        <h3>Envíanos un mensaje</h3>
+        <form id="contact-form" action="mailto:err_menciaf@unicah.edu" method="POST" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Enviar mensaje</button>
+        </form>
+        <p id="confirmation-message" style="display:none; color: green;">¡Tu mensaje ha sido enviado exitosamente!</p>             
+    </div>
+</section>

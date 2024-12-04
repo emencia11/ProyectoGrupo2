@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit Seven Gym</title>
+    <title>Contáctanos - Fit Seven Gym</title>
     <link rel="stylesheet" href="less/main.less" type="text/css">
 </head>
 <body>
-   {{>header}}.
-   
+   {{>header}}
 
+   <main>
+    {{>contactenos}}
+   </main>
 
+   {{>footer}}
 
+   <script>
+      document.querySelector('.hamburger').addEventListener('click', function() {
+          document.querySelector('nav').classList.toggle('active');
+      });
 
-   
-
-
-
-    </main>
-    {{>footer}}
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          
+          // Simular envío de correo
+          setTimeout(function() {
+              document.getElementById('contact-form').reset();
+              document.getElementById('confirmation-message').style.display = 'block';
+          }, 500);
+      });
+   </script>
 </body>
 </html>

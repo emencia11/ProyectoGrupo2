@@ -1,28 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit Seven Gym - Grupo 7</title>
+    <title>Fit Seven Gym - Inscríbete</title>
     <link rel="stylesheet" href="less/main.less" type="text/css">
 </head>
+
 <body>
-   {{>header}}.
-   
+    {{>header}}
 
+    <main class="registration-form">
+        <div class="form-container">
+            <form>
+                <h2 class="form-title">Inscripción al Gym</h2>
+                <section class="personal-info">
+                    <h3>Información Personal</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
 
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ingresa tus apellidos" required>
 
+                    <label for="entrenador-nombre">Nombre del Entrenador(a):</label>
+                    <input type="text" id="entrenador-nombre" name="entrenador-nombre" placeholder="Nombre del entrenador" required>
 
-   
+                    <label for="entrenador-apellidos">Apellidos del Entrenador(a):</label>
+                    <input type="text" id="entrenador-apellidos" name="entrenador-apellidos" placeholder="Apellidos del entrenador" required>
 
+                    <label for="horario">Horario para asistir:</label>
+                    <select id="horario" name="horario">
+                        <option value="">Seleccione una opción</option>
+                        <option value="mañana">Perder peso (4:00 AM)</option>
+                        <option value="tarde">Ganar masa muscular (1:00 PM)</option>
+                        <option value="noche">Liberar tensión (7:00 PM)</option>
+                        <option value="otros">Otros horarios</option>
+                    </select>
+                </section>
 
+                <section class="date-selection">
+                    <h3>Selecciona una Fecha</h3>
+                    <label for="anio">Año:</label>
+                    <select id="anio" name="anio">
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                    </select>
 
+                    <label for="mes">Mes:</label>
+                    <select id="mes" name="mes" onchange="actualizarDias()">
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                    </select>
+
+                    <label for="dia">Día:</label>
+                    <select id="dia" name="dia">
+                        <option value="01">1</option>
+                        <option value="02">2</option>
+                    </select>
+                </section>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="modalidad">Modalidad de Inscripción:</label>
+                <select id="modalidad" name="modalidad">
+                    <option value="presencial">Presencial</option>
+                </select>
+                
+                <button type="submit" class="btn-submit">Enviar Inscripción</button>
+            </form>
+        </div>
     </main>
+
     {{>footer}}
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('nav').classList.toggle('active');
-        });
-    </script>
 </body>
+
 </html>
